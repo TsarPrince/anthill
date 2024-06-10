@@ -140,6 +140,9 @@ const init = () => {
 window.addEventListener("keydown", (e) => {
   if (e.code === "Space") ant.step();
 });
+window.addEventListener("touchstart", () => {
+  ant.step();
+});
 
 document.querySelector("#inputFoodDistance").addEventListener("input", (e) => {
   document.querySelector("#infoFoodDistance").innerHTML = e.target.value;
