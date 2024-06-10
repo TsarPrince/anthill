@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="ant.png" type="image/x-icon" />
+    <title>Anthill</title>
+  </head>
+  <body style="margin: 0; font-size: 1rem; font-family: monospace">
+    <canvas
+      id="canvas"
+      style="background-color: #7f77b1"
+      width="375"
+      height="375"
+    ></canvas>
+    <div>
+      <label for="simulate">
+        <span>Simulate!</span>
+        <input type="checkbox" id="simulate" />
+      </label>
+      <span>("SPACE" to jump incrementaly)</span>
+    </div>
+    <div>
+      <span>Food distance: </span>
+      <input
+        type="range"
+        min="1"
+        max="10"
+        step="1"
+        value="2"
+        id="inputFoodDistance"
+      />
+      <span id="infoFoodDistance">2</span>
+    </div>
+    <div>
+      <span>No of episode(s): </span>
+      <span id="infoNumEpisode"></span>
+    </div>
+    <div>
+      <span>Average Time: </span>
+      <span id="infoAverage"></span>
+    </div>
+    <div>
+      <span>Completion Time(s): </span>
+      <span id="infoCompletedTime"></span>
+    </div>
+    <!-- <img id="ant" src="ant.png" alt="ant" srcset="" /> -->
+    <script src="main.js"></script>
+  </body>
+</html>
